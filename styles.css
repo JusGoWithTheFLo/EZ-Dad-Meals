@@ -1,3 +1,19 @@
+/* FONT STYLING */
+h1 {
+    text-align: center;
+    margin: 10px auto 30px auto;
+    font-size: 72px;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 2px;
+}
+
+
+
 body {
     margin: 0;
     padding: 0;
@@ -8,6 +24,7 @@ body {
     min-width: 500px;
     position: relative;
 }
+
 
 .background {
     content: "";
@@ -120,6 +137,8 @@ button:hover {
     padding-left: 20px;
 }
 
+/*------------END NAV------------*/
+
 .food-gallery {
     display: flex;
     justify-content: center;
@@ -128,17 +147,15 @@ button:hover {
 }
 
 .food-gallery img {
-    border-radius: 1em 5em;
+    border-radius: 5em 5em;
 }
 
-h1 {
-    text-align: center;
-    margin: 10px auto 30px auto;
-}
+
 
 #recipe-info {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 hr {
@@ -152,20 +169,47 @@ hr {
     width: 100%;
     min-width: 700px;
     background-color: aqua;
+    margin: auto;
+    flex-wrap: wrap;
 }
 
 #ingredients {
+    max-width: 300px;
     min-width: 300px;
-    height: 100%;
+    margin: 10px;
     background-color: green;
-    padding: 10px;
-    margin-left: 30px;
+    border-radius: 2em;
+    border: 1px solid black;
 }
 
-h2 {
-    text-align: center;
+#ingredients li {
+    padding: 4px 0;
 }
 
 #procedure {
-    
+    max-width: 600px;
+    min-width: 500px;
+    background-color: red;
+    border-radius: 2em;
+    border: 1px solid black;
+    padding-right: 25px;
+    margin: 10px;
+}
+
+#procedure li {
+    padding: 5px 0;
+}
+
+#notes {
+    max-width: 600px;
+    min-width: 300px;
+    background-color: blue;
+    border-radius: 2em;
+    border: 1px solid black;
+    padding-right: 10px;
+    margin: 10px auto;
+}
+
+#notes li {
+    padding: 5px 0;
 }
