@@ -70,8 +70,7 @@
 
 /* ---------- ROOT ---------*/
 :root {
-    --background-color: #A8E6CE;
-    --details-background-color: #FFAAA6;
+    --background-color: #ffffff;
 }
 
 
@@ -108,7 +107,7 @@ body {
     margin: 0;
     padding: 0;
     background: var(--background-color);
-    color: white;
+    color: black;
     font-family:Arial, Helvetica, sans-serif;
     width: 100%;
 }
@@ -136,6 +135,9 @@ main {
     margin-right: 20px;
 }
 
+.box-shadow {
+    box-shadow: 4px 3px 8px 1px gray;
+}
 
 /* ---------NAV STYLING----------*/
 
@@ -152,7 +154,25 @@ main {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 0 10px;
+    margin: 0 10px 0 2px;
+    font-weight: bold;
+    color: gray;
+}
+
+#explore-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.line {
+    display: block;
+    border: 2px solid gray;
+    border-bottom: 0px;
+    width: 20px;
+    margin: 5px;
 }
 
 .search-bar[type=text] {
@@ -243,28 +263,28 @@ button:hover {
 
 #socials .home-button img {
     clip-path: circle(37%);
-    height: 60px;
-    width: 60px;
+    height: 40px;
+    width: 40px;
     object-fit: contain;
     margin: 0 20px 0 0;
 }
 
 #socials .favorites img {
-    height: 45px;
-    width: 45px;
+    height: 30px;
+    width: 30px;
     object-fit: contain;
 }
 
 #socials .facebook img {
     clip-path: circle(22%);
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     object-fit: contain;
 }
 
 #socials .instagram img {
     width: 45px;
-    height: 100px;
+    height: 35px;
     object-fit: contain;
     clip-path: circle(40%);
 }
@@ -283,14 +303,11 @@ button:hover {
 }
 
 .food-gallery img {
-    border: 1px solid white;
-    border-radius: 2em 2em;
+    border-radius: 1em;
     width: 100%;
     height: auto;
     max-width: 500px;
 }
-
-
 
 #recipe-info {
     display: flex;
@@ -307,6 +324,14 @@ hr {
 #recipe-details {
     display: flex;
     justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.details-top {
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -315,8 +340,6 @@ hr {
 #ingredients {
     width: 400px;
     margin: 10px;
-    background: var(--details-background-color);
-    /*background-color: #DCEDC2;*/
     border-radius: 1em;
     border: 1px solid white;
 }
@@ -327,8 +350,6 @@ hr {
 
 #procedure {
     width: 600px;
-    background: var(--details-background-color);
-    /*background-color: #FFD3B5;*/
     border-radius: 1em;
     border: 1px solid white;
     padding-right: 25px;
@@ -341,8 +362,6 @@ hr {
 
 #notes {
     max-width: 600px;
-    background: var(--details-background-color);
-    /*background-color: #FFAAA6;*/
     border-radius: 1em;
     border: 1px solid white;
     padding-right: 10px;
