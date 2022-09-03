@@ -12,13 +12,16 @@
         font-size: 35px !important;
     }
 
-    nav {
-        flex-direction: column;
-        padding-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .search-bar {
+        width: 136px !important;
+        font-size: 12px !important;
     }
 
-    .food-gallery {
-        margin-top: 200px !important;
+    #search p {
+        font-size: 18px !important;
     }
 }
 
@@ -39,12 +42,16 @@
         font-size: 16px !important;
     }
 
-    #search {
+    nav {
+        flex-direction: row;
+    }
+
+    #search p, #search input, #search button {
         display: none !important;
     }
 
-    .food-gallery {
-        margin-top: 150px !important;
+    #explore-button {
+        margin-bottom: 6px;
     }
 
     .food-gallery img {
@@ -90,7 +97,7 @@ h2 {
     margin-top: 10px;
 }
 
-p {
+p, a {
     font-size: 23px;
 }
 
@@ -177,6 +184,7 @@ main {
 
 .search-bar[type=text] {
     padding: 0 50px 0 10px;
+    margin-left: 5px;
 }
 
 .search-bar {
@@ -189,10 +197,6 @@ main {
     border-top-right-radius: 4em 5em;
     border-bottom-left-radius: 4em 5em;
     border-bottom-right-radius: 4em 5em;
-}
-
-.search-bar[type=text] {
-    margin-left: 5px;
 }
 
 button {
@@ -257,7 +261,8 @@ button:hover {
 
 #socials a {
     margin: 0 5px;
-    color: white;
+    color: gray;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -289,6 +294,10 @@ button:hover {
     clip-path: circle(40%);
 }
 
+#socials .recipe {
+    margin-left: 20px;
+}
+
 #socials a:hover {
     cursor: pointer;
 }
@@ -298,7 +307,7 @@ button:hover {
 .food-gallery {
     display: flex;
     justify-content: center;
-    padding: 20px 4px;
+    padding: 0 4px 20px 4px;
     width: 100%;
 }
 
@@ -327,6 +336,13 @@ hr {
     max-width: 1100px;
     margin: 0 auto;
     flex-wrap: wrap;
+}
+
+#recipe-details strong {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: -30px;
+    text-decoration: underline;
 }
 
 .details-top {
