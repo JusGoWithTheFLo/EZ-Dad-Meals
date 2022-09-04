@@ -10,7 +10,23 @@
     <body>
         <header>
             <nav class="box-shadow">
+                <div id="logo">
+                    <img src="\assets\logo\logo 769x162.png" />
+                </div>
                 <div id="search">
+                    <div id="search-bar">
+                        <input class="search-bar" name="search" type="text" placeholder="What are you looking for?" />
+                        <button type="submit" action="search">
+                            <div id="magnifying-glass">
+                                <div class="circle"></div>
+                                <div class="handle"></div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+                <div id="socials">
+                    <a class="home-button" href="index.html"><img src="https://www.cityofpearl.com/wp-content/uploads/2020/09/igoogle-homepage-1-1.png" alt="Home" /></a>
+                    <a class="favorites" href="" title="Favorites"><img src="https://th.bing.com/th/id/R.ea734f486ba4654d505255bf7ba06b48?rik=PDChvD0i9J5RJw&riu=http%3a%2f%2faux4.iconspalace.com%2fuploads%2f85053191.png&ehk=jKUgcbPMxL4e7VgcQ4IRqMJQ2YcgUTs7U9cG20XWnnM%3d&risl=&pid=ImgRaw&r=0" alt="Add to Favorites" /></a>
                     <div id="explore-button">
                         <a href="">
                             <div class="line"></div>
@@ -19,91 +35,50 @@
                         </a>   
                     </div>
                     <p>Explore</p>
-                    <input class="search-bar" name="search" type="text" placeholder="What are you looking for?" />
-                    <button type="submit" action="search">
-                        <div id="magnifying-glass">
-                            <div class="circle"></div>
-                            <div class="handle"></div>
-                        </div>
-                    </button>
-                </div>
-                <div id="socials">
-                    <a class="home-button" href="index.html"><img src="https://www.cityofpearl.com/wp-content/uploads/2020/09/igoogle-homepage-1-1.png" alt="Home" /></a>
-                    <a class="favorites" href="" title="Favorites"><img src="https://th.bing.com/th/id/R.ea734f486ba4654d505255bf7ba06b48?rik=PDChvD0i9J5RJw&riu=http%3a%2f%2faux4.iconspalace.com%2fuploads%2f85053191.png&ehk=jKUgcbPMxL4e7VgcQ4IRqMJQ2YcgUTs7U9cG20XWnnM%3d&risl=&pid=ImgRaw&r=0" alt="Add to Favorites" /></a>
-                    <a class="facebook" href="" title="Facebook"><img src="https://th.bing.com/th/id/R.7daa7f0248e4a6a78a8b587f838b393d?rik=MOhGWnJNO4AdeA&riu=http%3a%2f%2f1000logos.net%2fwp-content%2fuploads%2f2016%2f11%2ffb-logo.jpg&ehk=X%2bVtOxNCfSbD%2bK39HsYNdZaX%2fYx4UEExDA3kYZPRh90%3d&risl=&pid=ImgRaw&r=0" alt="Facebook" /></a>
-                    <a class="instagram" href="" title="Instagram"><img src="https://pnggrid.com/wp-content/uploads/2021/05/Instagram-Logo-2048x1965.png" alt="Instagram" /></a>
                 </div>
             </nav>
         </header>
 
         <main>
-            <div class="food-gallery">
-                <img src="https://th.bing.com/th/id/OIP.ZWFawMt8CxNFKpf1MWOOeAHaHa?pid=ImgDet&rs=1">
+            <div id="welcome-top">
+                <div class="welcome-text">
+                    <p>Welcome to</p>  <img src="\assets\logo\logo 769x162.png" />
+                    <p>Quick meals for the kids (and the wifey)</p>
+                    <p>Easy meals from <b>30 to 75 minutes</b> start to finish</p>
+                </div>
+                <img class="welcome-img" src="https://www.bing.com/th?id=AMMS_26ddc8259adb446df760d55461588562&w=306&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1" alt="Korean Bulgogi Bowl">
             </div>
-            <h1>Egg Roll In A Bowl</h1>
-            <div id="recipe-info">
-                <p>Difficulty: <strong>Easy</strong></p>
-                <hr>
-                <p>Time: <strong>45min</strong></p>
-                <hr>
-                <p>Serves: <strong>4</strong></p>
-            </div>
-
-            <div id="recipe-details" class="box-shadow">
-                <div class="details-top">
-                    <div id="ingredients">
-                        <h2>Ingredients</h2>
-                        <ul>
-                            <li>4 cups water</li>
-                            <li>2 cups long grain brown rice</li>
-                            <li>2 Tbsp olive oil, divided</li>
-                            <li>1/2 cup red onion, diced</li>
-                            <li>1 tsp fresh grated ginger</li>
-                            <li>6 green onions, sliced, green and white parts divided</li>
-                            <li>1 lb grounded turkey</li>
-                            <li>1 bag shredded cabbage</li>
-                            <li>1-3 Tbsp soy sauce</li>
-                            <li>1-2 tsp sesame oil</li>
-                            <li>Salt and pepper to taste</li>
-                        </ul>
+            <hr id="welcome-hr" class="box-shadow">
+            <div id="welcome-bottom">
+                <h2>My Favorites</h2>
+                <div class="gallery">
+                    <div>
+                        <a href="\recipe_bbq-chicken-pizza.html">
+                            <img src="https://www.bing.com/th?id=AMMS_d6b808cb90c562de06e919e3de3f776d&w=459&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1" alt="BBQ Chicken Pizza" />
+                        </a>
+                        <p>BBQ Chicken Pizza</p>
                     </div>
-
-                    <div id="procedure">
-                        <h2>Procedure</h2>
-                        <ul>
-                            <li>
-                                In a large saucepan, bring water and brown rice to a boil for 2 minutes.  Reduce heat, cover pot, and let simmer for 30-35 minutes until all the water is absorbed.
-                            </li>
-                            <li>
-                                In a large skillet, heat the oil and add the red onion.  Sauce for about 5 minutes until the onion softens.  Add in the ginger, white part of the green onions, and the turkey.  Cook until the turkey is brown and cooked through, about 7 to 10 minutes.
-                            </li>
-                            <li>
-                                Add in the remaining oil and shredded cabbage.  Cook  until the cabbage is wilted, about 5 minutes. Remove from head and mix in soy sauce and sesame oil.
-                            </li>
-                            <li>
-                                Season to taste with salt and pepper.  Divide rice into bowls and serve a helping of the turkey cabbage mixture.  Top with green parts of onion and sesame oil to taste.
-                            </li>
-                        </ul>
+                    <div>
+                        <a href="\recipe_egg-roll-in-a-bowl.html">
+                            <img src="https://th.bing.com/th/id/OIP.ZWFawMt8CxNFKpf1MWOOeAHaHa?pid=ImgDet&rs=1" alt="Egg Roll in a Bowl" />
+                        </a>
+                        <p>Egg Roll in a Bowl</p>                        
+                    </div>
+                    <div>
+                        <a href="\recipe_korean-bulgogi-bowls.html">
+                            <img src="https://www.bing.com/th?id=AMMS_26ddc8259adb446df760d55461588562&w=306&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1" alt="Korean Bulgogi Bowls" />
+                        </a>
+                        <p>Korean Bulgogi Bowls</p>
+                    </div>
+                    <div>
+                        <a href="\recipe_spinach-lasagna-rolls.html">
+                            <img src="https://www.bing.com/th?id=AMMS_13fbb380cb0c303ab5511e4a977d775b&w=306&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1" alt="Spinach Lasagna Rolls" />
+                        </a>
+                        <p>Spinach Lasagna Rolls</p>
                     </div>
                 </div>
-                <div id="notes">
-                    <h2>Notes</h2>
-                    <ul>
-                        <li>
-                            Substitute ground pork, ground beef, or ground chicken for turkey.
-                        </li>
-                        <li>
-                            Try sriracha to spice up the bowl.
-                        </li>
-                        <li>
-                            Add in other veggies such as water chestnuts and carrots for variety.
-                        </li>
-                        <li>
-                            Serve with roasted carrots.
-                        </li>
-                    </ul>
-                </div>
             </div>
+            
         </main>
 
     </body>
