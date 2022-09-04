@@ -1,9 +1,5 @@
 /*--------- MEDIA ---------*/
 @media (max-width: 1125px) {
-    #ingredients {
-        width: 600px !important;
-    }
-
     h1 {
         font-size: 60px !important;
     }
@@ -12,20 +8,36 @@
         font-size: 35px !important;
     }
 
+    /*-----RECIPES-----*/
+    #ingredients {
+        width: 600px !important;
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
+    nav {
+        justify-content: center !important;
+    }
+
     .search-bar {
         width: 136px !important;
         font-size: 12px !important;
     }
 
-    #search p {
-        font-size: 18px !important;
-    }
+    #magnifying-glass {
+        height: 20px;
+        width: 21px;
+        top: 2px !important;
 }
 
-@media (max-width: 600px) {
+    #logo img {
+        max-width: 150px !important;
+        margin-right: 10px !important;
+    }
+
+}
+
+@media (max-width: 700px) {
     h1 {
         font-size: 40px !important;
     }
@@ -46,32 +58,35 @@
         flex-direction: row;
     }
 
-    #search p, #search input, #search button {
+    #socials p, #socials .home-button, #socials .favorites, #search input, #search button {
         display: none !important;
     }
 
     #explore-button {
         margin-bottom: 6px;
+        display: contents !important;
     }
 
-    .food-gallery img {
+    /*-----INDEX.HTML-----*/
+    #welcome-top {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .welcome-text img {
         max-width: 300px !important;
     }
 
-    h1 {
-        font-size: 25px !important;
+    .welcome-img {
+        height: 300px !important;
+        width: 300px !important;
+        object-fit: cover;
     }
 
-    h2 {
-        font-size: 25px !important;
-    }
 
-    p {
-        font-size: 14px !important;
-    }
-
-    li {
-        font-size: 16px !important;
+    /*-----RECIPES-----*/
+    .food-gallery img {
+        max-width: 300px !important;
     }
 }
 
@@ -129,7 +144,7 @@ nav {
     background: var(--background-color);
     font-size: 28px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     position: fixed;
@@ -147,6 +162,12 @@ main {
 }
 
 /* ---------NAV STYLING----------*/
+#logo img {
+    height: auto;
+    max-width: 200px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
 
 #search {
     margin: 0;
@@ -155,23 +176,13 @@ main {
     flex-wrap: nowrap;
 }
 
-#search p {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 0 10px 0 2px;
-    font-weight: bold;
-    color: gray;
-}
-
 #explore-button {
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     flex-direction: column;
+    display: none;
 }
 
 .line {
@@ -180,6 +191,10 @@ main {
     border-bottom: 0px;
     width: 20px;
     margin: 5px;
+}
+
+#search-bar {
+    position: relative;
 }
 
 .search-bar[type=text] {
@@ -218,12 +233,12 @@ button:hover {
 #magnifying-glass {
     height: 24px;
     width: 25px;
-    background-color: white;
+    background-color: transparent;
     position: absolute;
     overflow: hidden;
     padding: 0;
-    right: -1px;
-    top: -1px;
+    right: 0;
+    top: 0;
 }
 
 .circle {
@@ -259,6 +274,17 @@ button:hover {
     align-items: center;
 }
 
+#socials p {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 10px;
+    font-weight: bold;
+    color: gray;
+}
+
 #socials a {
     margin: 0 5px;
     color: gray;
@@ -271,27 +297,13 @@ button:hover {
     height: 40px;
     width: 40px;
     object-fit: contain;
-    margin: 0 20px 0 0;
+    margin: 0;
 }
 
 #socials .favorites img {
     height: 30px;
     width: 30px;
     object-fit: contain;
-}
-
-#socials .facebook img {
-    clip-path: circle(22%);
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-}
-
-#socials .instagram img {
-    width: 45px;
-    height: 35px;
-    object-fit: contain;
-    clip-path: circle(40%);
 }
 
 #socials .recipe {
@@ -304,6 +316,7 @@ button:hover {
 
 /*------------END NAV------------*/
 
+/*------------RECIPE PAGES START----------*/
 .food-gallery {
     display: flex;
     justify-content: center;
@@ -387,3 +400,98 @@ hr {
 #notes li {
     padding: 5px 0;
 }
+/*------------RECIPE PAGES END----------*/
+
+/*------------INDEX.HTML START----------*/
+#welcome-hr {
+    height: 0;
+    width: 70%;
+    margin: 40px auto;
+    border: 1px solid gray;
+}
+
+#welcome-top {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.welcome-text {
+    margin-right: 50px;
+}
+
+.welcome-text p:first-of-type {
+    color: #50db24;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-text img {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.welcome-text p:nth-of-type(2) {
+    color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.welcome-text p:nth-of-type(3) {
+    color: gray;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.welcome-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#welcome-bottom {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 5px;
+    max-width: 100%;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.gallery div {
+    width: 200px;
+    margin: 0 10px;
+}
+
+.gallery div img {
+    max-width: 200px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.gallery div p {
+    font-size: 20px;
+}
+/*------------INDEX.HTML END----------*/
