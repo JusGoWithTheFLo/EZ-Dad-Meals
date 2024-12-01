@@ -3,11 +3,9 @@
     h1 {
         font-size: 60px !important;
     }
-
     h2 {
         font-size: 35px !important;
     }
-
     /*-----RECIPES-----*/
     #ingredients {
         width: 600px !important;
@@ -18,91 +16,75 @@
     nav {
         justify-content: center !important;
     }
-
     .search-bar {
         width: 136px !important;
         font-size: 12px !important;
     }
-
     #magnifying-glass {
         height: 20px;
         width: 21px;
         top: 2px !important;
 }
-
     #logo img {
         max-width: 150px !important;
         margin-right: 10px !important;
     }
-
 }
 
 @media (max-width: 700px) {
     h1 {
         font-size: 40px !important;
     }
-
     h2 {
         font-size: 25px !important;
     }
-
     p {
         font-size: 18px !important;
     }
-
     li {
         font-size: 16px !important;
     }
-
     nav {
         flex-direction: row;
     }
-
     #socials p, #socials .home-button, #socials .favorites, #search input, #search button {
         display: none !important;
     }
-
     #explore-button {
         margin-bottom: 6px;
         display: contents !important;
     }
-
     /*-----INDEX.HTML-----*/
     #welcome-top {
         flex-direction: column !important;
         text-align: center !important;
     }
-
     .welcome-text img {
         max-width: 300px !important;
     }
-
     .welcome-img {
         height: 300px !important;
         width: 300px !important;
         object-fit: cover;
     }
-
-
     /*-----RECIPES-----*/
     .food-gallery img {
         max-width: 300px !important;
     }
 }
 
+/* -------------------------*/
 /* ---------- ROOT ---------*/
+/* -------------------------*/
 :root {
     --background-color: #ffffff;
 }
-
-
 /* FONT STYLING */
 h1 {
     text-align: center;
     margin: 10px auto 30px auto;
     font-size: 72px;
 }
-
 h2 {
     text-align: center;
     font-weight: bold;
@@ -111,17 +93,15 @@ h2 {
     text-decoration: underline;
     margin-top: 10px;
 }
-
 p, a {
     font-size: 23px;
 }
-
 li {
     font-size: 21px;
 }
-
-
+/* --------------------------------- */
 /* --------CONTAINER STYLING-------- */
+/* --------------------------------- */
 html {
     scroll-behavior: smooth;
 }
@@ -133,12 +113,10 @@ body {
     font-family:Arial, Helvetica, sans-serif;
     width: 100%;
 }
-
 header {
     width: 100%;
     padding: 0;
 }
-
 nav {
     width: 100%;
     background: var(--background-color);
@@ -150,32 +128,29 @@ nav {
     position: fixed;
     top: 0;
 }
-
 main {
     margin-top: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
-
 .box-shadow {
     box-shadow: 4px 3px 8px 1px gray;
 }
-
-/* ---------NAV STYLING----------*/
+/* --------------------------------- */
+/* ------------NAV STYLING-----------*/
+/* --------------------------------- */
 #logo img {
     height: auto;
     max-width: 200px;
     margin-top: 4px;
     margin-left: 10px;
 }
-
 #search {
     margin: 0;
     position: relative;
     display: flex;
     flex-wrap: nowrap;
 }
-
 #explore-button {
     display: flex;
     justify-content: center;
@@ -184,7 +159,6 @@ main {
     flex-direction: column;
     display: none;
 }
-
 .line {
     display: block;
     border: 2px solid gray;
@@ -192,16 +166,13 @@ main {
     width: 20px;
     margin: 5px;
 }
-
 #search-bar {
     position: relative;
 }
-
 .search-bar[type=text] {
     padding: 0 50px 0 10px;
     margin-left: 5px;
 }
-
 .search-bar {
     font-size: 18px;
     color: black;
@@ -213,7 +184,6 @@ main {
     border-bottom-left-radius: 4em 5em;
     border-bottom-right-radius: 4em 5em;
 }
-
 button {
     background-color: transparent;
     border: none;
@@ -225,11 +195,9 @@ button {
     height: 16px;
     width: 16px;
 }
-
 button:hover {
     cursor: pointer;
 }
-
 #magnifying-glass {
     height: 24px;
     width: 25px;
@@ -240,7 +208,6 @@ button:hover {
     right: 0;
     top: 0;
 }
-
 .circle {
     background-color: transparent;
     border: 1px solid black;
@@ -250,7 +217,6 @@ button:hover {
     border-radius: 50%;
     right: 0;
 }
-
 .handle {
     width: 0;
     height: 0;
@@ -266,14 +232,12 @@ button:hover {
     margin-top: 12px;
     transform: rotate(45deg);
 }
-
 #socials {
     display: inline-flex;
     padding: 0 10px;
     flex-wrap: nowrap;
     align-items: center;
 }
-
 #socials p {
     display: flex;
     flex-wrap: nowrap;
@@ -284,14 +248,12 @@ button:hover {
     font-weight: bold;
     color: gray;
 }
-
 #socials a {
     margin: 0 5px;
     color: gray;
     font-weight: bold;
     text-decoration: none;
 }
-
 #socials .home-button img {
     clip-path: circle(37%);
     height: 40px;
@@ -299,50 +261,43 @@ button:hover {
     object-fit: contain;
     margin: 0;
 }
-
 #socials .favorites img {
     height: 30px;
     width: 30px;
     object-fit: contain;
 }
-
 #socials .recipe {
     margin-left: 20px;
 }
-
 #socials a:hover {
     cursor: pointer;
 }
 
-/*------------END NAV------------*/
-
-/*------------RECIPE PAGES START----------*/
+/*----------------------------------*/
+/*------------RECIPE PAGES----------*/
+/*----------------------------------*/
 .food-gallery {
     display: flex;
     justify-content: center;
     padding: 0 4px 20px 4px;
     width: 100%;
 }
-
 .food-gallery img {
     border-radius: 1em;
     width: 100%;
     height: auto;
     max-width: 500px;
 }
-
 #recipe-info {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 20px;
 }
-
 hr {
     height: 50px;
     margin: 0 30px;
 }
-
 #recipe-details {
     display: flex;
     justify-content: center;
@@ -350,14 +305,12 @@ hr {
     margin: 0 auto;
     flex-wrap: wrap;
 }
-
 #recipe-details strong {
     font-weight: bold;
     font-size: 18px;
     margin-left: -30px;
     text-decoration: underline;
 }
-
 .details-top {
     display: flex;
     justify-content: center;
@@ -365,18 +318,15 @@ hr {
     margin: 0 auto;
     flex-wrap: wrap;
 }
-
 #ingredients {
     width: 400px;
     margin: 10px;
     border-radius: 1em;
     border: 1px solid white;
 }
-
 #ingredients li {
     padding: 4px 0;
 }
-
 #procedure {
     width: 600px;
     border-radius: 1em;
@@ -384,11 +334,9 @@ hr {
     padding-right: 25px;
     margin: 10px;
 }
-
 #procedure li {
     padding: 5px 0;
 }
-
 #notes {
     max-width: 600px;
     border-radius: 1em;
@@ -396,20 +344,19 @@ hr {
     padding-right: 10px;
     margin: 10px auto;
 }
-
 #notes li {
     padding: 5px 0;
 }
-/*------------RECIPE PAGES END----------*/
 
-/*------------INDEX.HTML START----------*/
+/*--------------------------------*/
+/*------------INDEX.HTML----------*/
+/*--------------------------------*/
 #welcome-hr {
     height: 0;
     width: 70%;
     margin: 40px auto;
     border: 1px solid gray;
 }
-
 #welcome-top {
     max-width: 1000px;
     display: flex;
@@ -418,43 +365,36 @@ hr {
     align-content: center;
     margin: 0 auto;
 }
-
 .welcome-text {
     margin-right: 50px;
 }
-
 .welcome-text p:first-of-type {
     color: #50db24;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
 }
-
 .welcome-text img {
     max-width: 500px;
     width: 100%;
     margin-left: 20px;
 }
-
 .welcome-text p:nth-of-type(2) {
     color: gray;
     font-size: 20px;
     margin-top: 20px;
     margin-bottom: 0px;
 }
-
 .welcome-text p:nth-of-type(3) {
     color: gray;
     font-size: 20px;
     margin-top: 5px;
 }
-
 .welcome-img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
-
 #welcome-bottom {
     width: 100%;
     max-width: 1000px;
@@ -465,7 +405,6 @@ hr {
     flex-direction: column;
     margin: 0 auto;
 }
-
 .gallery {
     display: flex;
     flex-direction: row;
@@ -476,12 +415,10 @@ hr {
     text-align: center;
     justify-content: center;
 }
-
 .gallery div {
     width: 200px;
     margin: 0 10px;
 }
-
 .gallery div img {
     max-width: 200px;
     width: 100%;
@@ -490,8 +427,6 @@ hr {
     object-position: center;
     border-radius: 10px;
 }
-
 .gallery div p {
     font-size: 20px;
 }
-/*------------INDEX.HTML END----------*/
