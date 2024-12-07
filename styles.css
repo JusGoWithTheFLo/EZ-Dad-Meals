@@ -6,10 +6,7 @@
     h2 {
         font-size: 35px !important;
     }
-    /*-----RECIPES-----*/
-    #ingredients {
-        width: 600px !important;
-    }
+    
 }
 
 @media (max-width: 900px) {
@@ -320,32 +317,24 @@ hr {
 }
 #ingredients {
     width: 400px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 1em;
     border: 1px solid white;
-}
-#ingredients li {
-    padding: 4px 0;
+    padding: 5px 25px;
 }
 #procedure {
     width: 600px;
     border-radius: 1em;
     border: 1px solid white;
-    padding-right: 25px;
+    padding: 5px 25px;
     margin: 10px;
-}
-#procedure li {
-    padding: 5px 0;
 }
 #notes {
     max-width: 600px;
     border-radius: 1em;
     border: 1px solid white;
-    padding-right: 10px;
-    margin: 10px auto;
-}
-#notes li {
-    padding: 5px 0;
+    padding: 5px 10px 5px 0;
+    margin: 5px 25px;
 }
 
 /*--------------------------------*/

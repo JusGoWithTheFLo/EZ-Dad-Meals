@@ -6,16 +6,47 @@ let currentRecipe = 0;
 //
 // HTML SELECTORS
 //
+const defaultTitle = "EZ Dad Meals | ";
 const pageTitle = document.querySelector("title");
 const recipeImage = document.querySelector("#image");
 const recipeName = document.querySelector("#name");
-const difficult = document.querySelector("#difficulty");
+const difficulty = document.querySelector("#difficulty");
 const time = document.querySelector("#time");
 const servingSize = document.querySelector("#servingSize");
 const ingredientsText = document.querySelector("#ingredientsText");
 const procedureText = document.querySelector("#procedureText");
 const notesText = document.querySelector("#notesText");
 
+// BUTTONS
+const button1 = document.querySelector("#button1");
+
+// INITIALIZE BUTTONS
+button1.onclick = show_bbq_chicken_pizza;
+
+//
+// UPDATE FUNCTION
+//
+function update(recipes){
+    pageTitle.innerHTML = defaultTitle + recipes.name; //doesnt work yet
+    recipeImage.setAttribute("src", recipes.image);
+    recipeName.innerText = recipes.name;
+    difficulty.innerText = recipes.difficulty;
+    time.innerText = recipes.time;
+    servingSize.innerText = recipes["serving size"];
+    ingredientsText.innerText = recipes["ingredients"].map(function(element){
+        return "* " + element}).join("\n");
+    procedureText.innerText = recipes.procedure.map(function(element){
+        return "* " + element}).join("\n");
+    notesText.innerText = recipes.notes.map(function(element){
+        return "* " + element}).join("\n");
+}
+
+//
+// SHOW RECIPE FUNCTION
+//
+function show_bbq_chicken_pizza(){
+    update(recipes[0]);
+}
 
 //
 // RECIPES
@@ -23,11 +54,10 @@ const notesText = document.querySelector("#notesText");
 const recipes = [
     {
         name: "BBQ Chicken Pizza",
-        title: " | BBQ Chicken Pizza",
         difficulty: "Easy",
         time: "45min",
-        servingSize: 4,
-        image: "",
+        "serving size": "4",
+        image: "https://www.bing.com/th?id=AMMS_d6b808cb90c562de06e919e3de3f776d&w=459&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1",
         ingredients: [
             "1 loaf of french bread",
             "3/4 cup bbq sauce, divided",
@@ -54,5 +84,9 @@ const recipes = [
         ]
     }
 ]
+
+
+
+
 
 
