@@ -1,6 +1,29 @@
+//
+//  GLOBAL VARIABLES
+//
+let currentRecipe = 0;
+
+//
+// HTML SELECTORS
+//
+const pageTitle = document.querySelector("title");
+const recipeImage = document.querySelector("#image");
+const recipeName = document.querySelector("#name");
+const difficult = document.querySelector("#difficulty");
+const time = document.querySelector("#time");
+const servingSize = document.querySelector("#servingSize");
+const ingredientsText = document.querySelector("#ingredientsText");
+const procedureText = document.querySelector("#procedureText");
+const notesText = document.querySelector("#notesText");
+
+
+//
+// RECIPES
+//
 const recipes = [
     {
         name: "BBQ Chicken Pizza",
+        title: " | BBQ Chicken Pizza",
         difficulty: "Easy",
         time: "45min",
         servingSize: 4,
@@ -31,3 +54,5 @@ const recipes = [
         ]
     }
 ]
+
+
