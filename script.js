@@ -22,11 +22,13 @@ const notesText = document.querySelector("#notesText");
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
+const button4 = document.querySelector("#button4");
 
 // INITIALIZE BUTTONS
 button1.onclick = show_favorite1;
 button2.onclick = show_favorite2;
 button3.onclick = show_favorite3;
+button4.onclick = show_favorite4;
 
 //
 // UPDATE FUNCTION
@@ -45,6 +47,7 @@ function update(recipes){
         return "* " + element}).join("\n");
     notesText.innerText = recipes.notes.map(function(element){
         return "* " + element}).join("\n");
+    window.location.href = "home.html#recipes"; //redirects user to recipes section
 }
 
 //
@@ -53,13 +56,14 @@ function update(recipes){
 function show_favorite1(){
     update(recipes_favorite[0]);
 }
-
 function show_favorite2(){
     update(recipes_favorite[1]);
 }
-
 function show_favorite3(){
     update(recipes_favorite[2]);
+}
+function show_favorite4(){
+    update(recipes_favorite[3]);
 }
 
 //
@@ -174,6 +178,34 @@ const recipes_favorite = [
             "For increased flavor, you can marinate the chicken for 1-24 hours!",
             "Use rotisserie chicken to make this even quicker!",
             "Keep onions off kids portions if they don't like it."
+        ]
+    },
+    {
+        name: "Spinach Lasagna Rolls",
+        difficulty: "Very Easy + Kid Friendly",
+        time: "70min",
+        "serving size": "4",
+        image: "https://www.bing.com/th?id=AMMS_13fbb380cb0c303ab5511e4a977d775b&w=306&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1",
+        ingredients: [
+            "2 cups homemade marinara sauce, plus more for serving",
+            "**9 uncooked lasagna noodles, wheat or gluten-free",
+            "10 oz package frozen chopped spinach, thawed and squeezed well",
+            "15 oz part skim ricotta cheese",
+            "1/2 cup grated Parmesan cheese",
+            "1 large egg",
+            "Kosher salt and pepper",
+            "9 Tbsp mozzarella cheese"
+        ],
+        procedure: [
+            "Preheat oven to 350 degrees Fahrenheit.  Ladle about 1 cup sauce on the bottom of a 9 x 12 baking dish.",
+            "Cook noodles according to package directions, then drain.",
+            "Combine spinach, ricotta Permesan cheese, egg, 1/2 tsp salt and black pepper in a medium bowl and mix.",
+            "Place a piece of wax/parchment paper on the counter and lay out lasagna noodles.  Make sure noodles are dry.  Take 1/3 cup of ricotta mixture and spread evenly over noodle.  Roll carefully and place seam side down onto the baking dish.  Repeat with remaining noodles.  Challenge the kiddos to roll it without squishing any of the ricotta mixture out.",
+            "Ladle remaining sauce over the noodles and top each one with 1 Tbsp mozzarella cheese.  Put foil over baking dish and bake for <b>40 minutes</b>, or until cheese melts.  Makes 9 rolls.",
+            "To serve, ladle a little sauce on the plate and top with lasagna roll."
+        ],
+        notes: [
+            "9 rolls may not go far in your house.  Double the recipe as needed, but be mindful of portions as well."
         ]
     }
 ]
