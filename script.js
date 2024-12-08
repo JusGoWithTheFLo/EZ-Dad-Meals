@@ -8,6 +8,7 @@ let currentRecipe = 0;
 //
 const defaultTitle = "EZ Dad Meals | ";
 const pageTitle = document.querySelector("title");
+const recipesDiv = document.querySelector("#recipes");
 const recipeImage = document.querySelector("#image");
 const recipeName = document.querySelector("#name");
 const difficulty = document.querySelector("#difficulty");
@@ -28,6 +29,7 @@ button1.onclick = show_bbq_chicken_pizza;
 //
 function update(recipes){
     pageTitle.innerHTML = defaultTitle + recipes.name; //doesnt work yet
+    recipesDiv.setAttribute("style", "display: block;");
     recipeImage.setAttribute("src", recipes.image);
     recipeName.innerText = recipes.name;
     difficulty.innerText = recipes.difficulty;

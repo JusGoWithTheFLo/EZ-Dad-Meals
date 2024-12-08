@@ -273,6 +273,9 @@ button:hover {
 /*----------------------------------*/
 /*------------RECIPE PAGES----------*/
 /*----------------------------------*/
+#recipes {
+    display: none;
+}
 .food-gallery {
     display: flex;
     justify-content: center;
