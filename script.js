@@ -75,7 +75,7 @@ const recipes_favorite = [
         difficulty: "Easy",
         time: "45min",
         "serving size": "4",
-        image: "https://www.bing.com/th?id=AMMS_d6b808cb90c562de06e919e3de3f776d&w=459&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1",
+        image: "https://sallysbakingaddiction.com/wp-content/uploads/2014/03/Homemade-BBQ-Chicken-Pizza-2.jpg",
         ingredients: [
             "1 loaf of french bread",
             "3/4 cup bbq sauce, divided",
@@ -138,7 +138,7 @@ const recipes_favorite = [
         difficulty: "Somewhat Hard",
         time: "70min",
         "serving size": "4",
-        image: "https://www.bing.com/th?id=AMMS_26ddc8259adb446df760d55461588562&w=306&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1",
+        image: "https://img.freepik.com/premium-photo/savory-korean-bulgogi-bowl-with-beef-vegetables-white-background-generative-ai_804788-9890.jpg",
         ingredients: [
             "Steak:",
             "1 cup low sodium soy sauce",
@@ -185,7 +185,7 @@ const recipes_favorite = [
         difficulty: "Very Easy + Kid Friendly",
         time: "70min",
         "serving size": "4",
-        image: "https://www.bing.com/th?id=AMMS_13fbb380cb0c303ab5511e4a977d775b&w=306&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.25&pid=16.1",
+        image: "https://www.foodiecrush.com/wp-content/uploads/2016/01/Spinach-Lasagna-Roll-Ups-foodiecrush.com-18-1.jpg",
         ingredients: [
             "2 cups homemade marinara sauce, plus more for serving",
             "**9 uncooked lasagna noodles, wheat or gluten-free",
